@@ -1,0 +1,113 @@
+/* Ерөнхий тохиргоо */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #fffbf2; /* Арын цайвар өнгө */
+    color: #222;
+}
+
+/* Навигацийн хэсэг (Navbar) */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #222;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ac7e68;
+}
+
+/* --- ГАРГАХ ГЭСЭН ХЭСЭГ: Зураг ба Текст --- */
+.top-container {
+    display: flex;        /* ХАЖУУ ХАЖУУД НЬ ГАРГАХ ГОЛ КОМАНД */
+    align-items: flex-start; /* Дээд талаар нь тэгшилнэ */
+    gap: 50px;           /* Хоорондын зай */
+    padding: 80px 10%;   /* Хоёр талаас нь зай авна */
+}
+
+.top-image {
+    flex: 1;             /* Нийт зайны талыг авна */
+}
+
+.top-image img {
+    width: 100%;         /* Зургийг контейнертаа тааруулна */
+    height: auto;
+    border-radius: 5px;  /* Буланг үл ялиг дугуйлах */
+    box-shadow: 10px 10px 0px #ac7e68; /* Гоёл болгож доор нь хүрээ нэмж болно */
+}
+
+.top-text {
+    flex: 1;             /* Текстийн хэсэг талыг авна */
+}
+
+.top-text h4 {
+    color: #ac7e68;      /* Үндсэн бор өнгө */
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.top-text h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ac7e68;
+    display: inline-block;
+}
+
+.top-text p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify; /* Текстийг хоёр талд нь тэгшлэх */
+}
+
+/* Кофены хэсэг (Overlay-тэй хэсэг) */
+.coffee-section {
+    position: relative;
+    height: 400px;
+    background: url('home3.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Зургийг харанхуйлах */
+}
+
+.coffee-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
